@@ -1,0 +1,30 @@
+.feed-card img{
+    aspect-ratio: 1;
+    width: 200px;
+}
+.feed-card{
+    margin-inline: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: solid black 2px;
+    margin-top: 20px;
+}
+
+.left{
+    padding: 20px;
+}
+.left p{
+    color: black;
+}
+.right{
+    padding: 20px;
+}
+
+.feed-cont{
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

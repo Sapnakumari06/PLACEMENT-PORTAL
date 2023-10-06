@@ -1,0 +1,24 @@
+.marque-box img{
+    width: 200px;
+    aspect-ratio: 1;
+    margin-inline: 30px;
+}
+.marque-box{
+    /* background: red; */
+    width: 75%;
+    margin: 40px auto;
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.one h4{
+    border: solid black 2px;
+    width: 50%;
+    background: lavender;
+    margin-top: 10px;
+}

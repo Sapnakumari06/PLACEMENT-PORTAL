@@ -1,0 +1,14 @@
+const axios = require('axios'); // Make sure you've installed Axios
+
+const loginData = {
+  email: 'user@example.com', // Replace with the user's email
+  password: 'password123',    // Replace with the user's password
+};
+
+axios.post('http://localhost:5000/api/placements/api/login', loginData)
+  .then((response) => {
+    console.log('Login successful', response.data);
+  })
+  .catch((error) => {
+    console.error('Login failed', error);
+  });

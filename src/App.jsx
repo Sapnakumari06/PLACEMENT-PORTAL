@@ -1,6 +1,7 @@
 import Topbar from "./components/topbar/Topbar";
 import Homepage from "./pages/homepage/Homepage";
 import Startups from "./pages/startups/Startups";
+import Login from "./pages/login/Login";
 import Cabin from "./pages/cabin/Cabin";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route path="/startups">
             <Startups />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/cabin">
             <Cabin />

@@ -48,7 +48,7 @@ export default function Topbar() {
           alt="logo-ayush-center" ></img></div>
           <li className="topListItem">
           <Link className="link" to="/startups">
-              HIGHEST PACKEGES 
+              BLOGS 
             </Link>
           </li>
         

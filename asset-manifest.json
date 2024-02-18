@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React-app/static/css/main.1d0a69aa.css",
+    "main.js": "/React-app/static/js/main.12258dd9.js",
+    "static/media/Placement2023_.png": "/React-app/static/media/Placement2023_.c0d24642737c23cfc1e5.png",
+    "index.html": "/React-app/index.html",
+    "main.1d0a69aa.css.map": "/React-app/static/css/main.1d0a69aa.css.map",
+    "main.12258dd9.js.map": "/React-app/static/js/main.12258dd9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d0a69aa.css",
+    "static/js/main.12258dd9.js"
+  ]
+}

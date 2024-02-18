@@ -3,7 +3,6 @@ import Homepage from "./pages/homepage/Homepage";
 import Startups from "./pages/startups/Startups";
 import Login from "./pages/login/Login.jsx"; // Use lowercase 'l' for 'login.js'
 import Cabin from "./pages/cabin/Cabin";
-import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Write from "./pages/write/Write";
 
@@ -25,13 +24,6 @@ function App() {
           </Route>
           <Route path="/cabin">
             <Cabin />
-          </Route>
-          <Route path="/register">
-            <Register />
-          </Route>
-
-          <Route path="/write">
-            <Write />
           </Route>
           {/* Add other routes as needed */}
         </Switch>

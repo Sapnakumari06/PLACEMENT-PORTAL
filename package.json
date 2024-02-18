@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "My React Application",
   "author": "Your Name",
-  "homepage": "http://Farhan-001x.github.io/React-app",
+  "homepage": ".",
   "private": false,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",

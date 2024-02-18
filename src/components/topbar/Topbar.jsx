@@ -44,7 +44,7 @@ export default function Topbar() {
           <div classname="midlogo">
             <img 
             className="logoimg"
-          src="https://i.ibb.co/0QFChH7/logo-ayush-center.png" 
+          src="https://i.ibb.co/tsPNQ9g/placements.jpg" 
           alt="logo-ayush-center" ></img></div>
           <li className="topListItem">
           <Link className="link" to="/startups">
@@ -54,7 +54,7 @@ export default function Topbar() {
         
           <li className="topListItem">
             <Link className="link" to="/write">
-              SOCIAL CENTER
+              Dashboard
             </Link>
           </li>
           
@@ -66,10 +66,10 @@ export default function Topbar() {
         <i className="topSearchIcon fas fa-search"></i>
         <li className="topListItem">
               <Link className="link" to="/login">
-                 LOGIN
+                 LOGIN/REGISTER
               </Link>
             </li>
-        {user && <li className="topright">LOGOUT</li>}
+        {user && <li className="topright"></li>}
       </div>
     </div>
   );

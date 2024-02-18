@@ -1,11 +1,11 @@
 import Topbar from "./components/topbar/Topbar";
 import Homepage from "./pages/homepage/Homepage";
 import Startups from "./pages/startups/Startups";
-import Login from "./pages/login/Login";
+import Login from "./pages/login/Login.jsx"; // Use lowercase 'l' for 'login.js'
 import Cabin from "./pages/cabin/Cabin";
-import Login from "./pages/login/Login"
 import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Write from "./pages/write/Write";
 
 function App() {
   const currentUser = true;
@@ -26,11 +26,12 @@ function App() {
           <Route path="/cabin">
             <Cabin />
           </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
           <Route path="/register">
             <Register />
+          </Route>
+
+          <Route path="/write">
+            <Write />
           </Route>
           {/* Add other routes as needed */}
         </Switch>

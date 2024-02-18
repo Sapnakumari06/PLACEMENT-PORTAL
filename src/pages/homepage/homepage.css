@@ -1,3 +1,9 @@
 .home {
   display: flex;
 }
+.carousel-item{
+    text-decoration-color: azure;
+}
+h5,p{
+  color: azure;
+}

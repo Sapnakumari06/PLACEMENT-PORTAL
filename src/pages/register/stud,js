@@ -1,0 +1,47 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+
+export default function Register() {
+  const [formData, setFormData] = useState({
+    first_name: '',
+    last_name: '',
+    date_of_birth: '',
+    email: '',
+    phone: '',
+    department_id: 1, // Set a default department ID or retrieve it from somewhere
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Send a POST request to the registration API
+      const response = await axios.post('/api/register', formData);
+
+      // Handle the response (e.g., show a success message)
+      console.log('Registration successful', response.data);
+    } catch (error) {
+      // Handle errors (e.g., show an error message)
+      console.error('Registration failed', error);
+    }
+  };
+
+  return (
+    <div className="register-container">
+      <form onSubmit={handleSubmit}>
+        {/* Form fields go here, with controlled components */}
+        <button type="submit" className="btn btn-primary p-2">
+          Register
+        </button>
+      </form>
+    </div>
+  );
+}
